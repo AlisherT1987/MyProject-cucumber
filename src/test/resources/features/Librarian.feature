@@ -1,4 +1,4 @@
-@project
+@project @smoke
 Feature:Library Functionality
 
   @B28G1-18 @librarian @wip

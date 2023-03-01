@@ -1,4 +1,4 @@
-@flipkart @regression
+@flipkart
 Feature: Flipkart Search Functionality
     Scenario: User should able to get Wire Headphones page
   Given  Go to: "https://www.flipkart.com/"

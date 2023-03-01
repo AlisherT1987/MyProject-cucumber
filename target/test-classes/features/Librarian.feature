@@ -1,4 +1,4 @@
-
+@regression
 Feature:Library Functionality
 
   @B28G1-18 @librarian @smoke
@@ -15,11 +15,11 @@ Feature:Library Functionality
   Scenario: As a user, I should be able to access to the main page.
     Then students can get 2 modules from the homepage: Books, Borrowing Books
 
-  @B28G1-10 @librarian
+  @B28G1-10 @librarian @smoke
   Scenario: As a librarian, I should be able to to get the correct user and book information
-    Then Verify on dashboard there are 215 users
-    Then Verify on dashboard there are 1375 books
-    Then Verify on dashboard there are 86 Borrowed books
+    Then Verify on dashboard there are 219 users
+    Then Verify on dashboard there are 1378 books
+    Then Verify on dashboard there are 85 Borrowed books
 
   @B28G1-11 @librarian @smoke
   Scenario: As a user, I should be able to see the book records on the Books page.

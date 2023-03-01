@@ -1,4 +1,4 @@
-
+@regression
 Feature:Verifying buttons feature of the application
   @demoqa
   Scenario: Check different button actions
@@ -9,7 +9,7 @@ Feature:Verifying buttons feature of the application
     Then  Verify textB :"You have done a right click" should be visible
     And   Click Me button
     Then  Verify textC :"You have done a dynamic click" should be visible
-
+  @demoqa
   Scenario Outline:Getting different responses by different links
     Given Get to links page
     When the user clicks to "<link>"

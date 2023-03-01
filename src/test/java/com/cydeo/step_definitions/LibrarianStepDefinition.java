@@ -262,7 +262,7 @@ Assert.assertEquals(int1,listW.size());
         BrowserUtils.sleep(2);
         library.passwordUser.sendKeys("1234567");
         BrowserUtils.sleep(2);
-        library.emailUser.sendKeys("user9@gmail.com");
+        library.emailUser.sendKeys("user11@gmail.com");
         BrowserUtils.sleep(2);
         library.saveChangesUserButton.click();
 
@@ -284,7 +284,7 @@ Assert.assertEquals(int1,listW.size());
         BrowserUtils.sleep(2);
         library.passwordUser.sendKeys("1234567");
         BrowserUtils.sleep(2);
-        library.emailUser.sendKeys("user9@gmail.com");
+        library.emailUser.sendKeys("user11@gmail.com");
         BrowserUtils.sleep(2);
         library.saveChangesButton.click();
         BrowserUtils.sleep(2);

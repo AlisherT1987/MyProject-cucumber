@@ -51,10 +51,8 @@ public class DemoqaSD {
 
     @And("Click Me button")
     public void clickMeButton() {
-        System.out.println(demo.ClickButton.getText());
-        Assert.assertTrue(demo.ClickButton.isEnabled());
-
-action.scrollByAmount(0,100).perform();
+        BrowserUtils.sleep(2);
+action.scrollByAmount(0,200).perform();
    action.moveToElement(demo.ClickButton).click().perform();
 
     }
@@ -77,7 +75,8 @@ action.scrollByAmount(0,100).perform();
     @When("the user clicks to {string}")
     public void theUserClicksTo(String link) {
        // Driver.getDriver().findElement(By.xpath("//a[.='"+link+"']")).click();
-        action.scrollByAmount(0,150).perform();
+        BrowserUtils.sleep(2);
+        action.scrollByAmount(0,200).perform();
         BrowserUtils.sleep(1);
         action.moveToElement(Driver.getDriver().findElement(By.xpath("//a[.='"+link+"']"))).click().perform();
     }

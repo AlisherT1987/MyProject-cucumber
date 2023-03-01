@@ -21,7 +21,7 @@ public class Demoqa {
     public WebElement rightClickButtons;
     @FindBy(id = "rightClickMessage")
     public WebElement message2;
-    @FindBy(id = "Click Me")
+    @FindBy(xpath = "//button[.='Click Me']")
     public WebElement ClickButton;
     @FindBy(id = "dynamicClickMessage")
     public WebElement message3;

@@ -186,8 +186,7 @@ Assert.assertEquals("Library",Driver.getDriver().getTitle());
         System.out.println(listW.size());
         BrowserUtils.sleep(2);
 Assert.assertEquals(int1,listW.size());
-        Assert.assertEquals(word,word2.substring(0,word2.length()-1));
-
+        Assert.assertEquals(word,word2.substring(0,word2.length()-1))
 
       */
 

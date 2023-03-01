@@ -1,4 +1,4 @@
-@practice
+@practice @regression
 Feature: Google search functionality
   Scenario: As user should be able search "apple" in a Google
     Given  the user go to "https://www.google.com"

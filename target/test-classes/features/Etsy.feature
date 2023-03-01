@@ -1,4 +1,4 @@
-@etsy
+@etsy @regression
 Feature: Etsy Search Functionality
   @TC-1
   Scenario: Etsy Title Verification

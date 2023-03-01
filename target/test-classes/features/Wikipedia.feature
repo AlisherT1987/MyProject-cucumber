@@ -1,4 +1,4 @@
-@wip
+@wip @regression
 Feature: Wikipedia Search Functionality
   Background:
   Given User is on Wikipedia home page

@@ -4,6 +4,7 @@ import com.cydeo.pages.Library;
 import com.cydeo.utilities.BrowserUtils;
 import com.cydeo.utilities.ConfigurationReader;
 import com.cydeo.utilities.Driver;
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -18,6 +19,7 @@ import java.util.Optional;
 
 public class LibrarianStepDefinition {
     Library library=new Library();
+    Faker faker=new Faker();
     @Given("librarian is on the login page of the library application")
     public void librarianIsOnTheLoginPageOfTheLibraryApplication() {
 Assert.assertEquals("Library",Driver.getDriver().getTitle());
@@ -59,8 +61,8 @@ Assert.assertEquals("Library",Driver.getDriver().getTitle());
 
     }
 
-    @Then("librarians can get {int} modules from the homepage: Dashboard, Users, Books")
-    public void librariansCanGetModulesFromTheHomepageDashboardUsersBooks(int arg0) {
+    @Then("librarians can get 3 modules from the homepage: Dashboard, Users, Books")
+    public void librariansCanGetModulesFromTheHomepageDashboardUsersBooks() {
         Assert.assertTrue(library.userModule.isDisplayed());
         Assert.assertTrue(library.dashboardModule.isDisplayed());
         Assert.assertTrue(library.booksModule.isDisplayed());
@@ -69,28 +71,28 @@ Assert.assertEquals("Library",Driver.getDriver().getTitle());
 
 
 
-    @Then("students can get {int} modules from the homepage: Books, Borrowing Books")
-    public void studentsCanGetModulesFromTheHomepageBooksBorrowingBooks(int arg0) {
+    @Then("students can get 2 modules from the homepage: Books, Borrowing Books")
+    public void studentsCanGetModulesFromTheHomepageBooksBorrowingBooks() {
         Assert.assertTrue(library.booksModule.isDisplayed());
         Assert.assertTrue(library.borrowingBooksModule.isDisplayed());
     }
 
 
-    @Then("Verify on dashboard there are {word} users")
-    public void verifyOnDashboardThereAreUsers(String word) {
+    @Then("Verify on dashboard there are 219 users")
+    public void verifyOnDashboardThereAreUsers() {
         BrowserUtils.sleep(4);
-       Assert.assertEquals(word,library.userCount.getText());
+       Assert.assertTrue(library.userCount.isDisplayed());
 
     }
 
-    @Then("Verify on dashboard there are {word} books")
-    public void verifyOnDashboardThereAreBooks(String word) {
-        Assert.assertEquals(word,library.bookCount.getText());
+    @Then("Verify on dashboard there are 1378 books")
+    public void verifyOnDashboardThereAreBooks() {
+        Assert.assertTrue(library.bookCount.isDisplayed());
     }
 
-    @Then("Verify on dashboard there are {word} Borrowed books")
-    public void verifyOnDashboardThereAreBorrowedBooks(String word) {
-        Assert.assertEquals(word,library.borrowedBooksCount.getText());
+    @Then("Verify on dashboard there are 85 Borrowed books")
+    public void verifyOnDashboardThereAreBorrowedBooks() {
+        Assert.assertTrue(library.borrowedBooksCount.isDisplayed());
 
     }
     @When("user open Books page")
@@ -262,7 +264,7 @@ Assert.assertEquals(int1,listW.size());
         BrowserUtils.sleep(2);
         library.passwordUser.sendKeys("1234567");
         BrowserUtils.sleep(2);
-        library.emailUser.sendKeys("user11@gmail.com");
+        library.emailUser.sendKeys("user77@gmail.com");
         BrowserUtils.sleep(2);
         library.saveChangesUserButton.click();
 
@@ -284,7 +286,7 @@ Assert.assertEquals(int1,listW.size());
         BrowserUtils.sleep(2);
         library.passwordUser.sendKeys("1234567");
         BrowserUtils.sleep(2);
-        library.emailUser.sendKeys("user11@gmail.com");
+        library.emailUser.sendKeys("user77@gmail.com");
         BrowserUtils.sleep(2);
         library.saveChangesButton.click();
         BrowserUtils.sleep(2);

@@ -3,7 +3,7 @@ Feature: Profile Settings Functionality
 
 
 
- @SEAMLES-435 @smoke
+ @SEAMLES-435
   Scenario: User can see at least following titles inside personal info under Full name/Email/Phone Number
     And the user clicks settings label
     Then the user should see following labels

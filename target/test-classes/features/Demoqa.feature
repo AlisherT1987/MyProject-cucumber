@@ -1,4 +1,4 @@
-@regression
+
 Feature:Verifying buttons feature of the application
   @demoqa
   Scenario: Check different button actions

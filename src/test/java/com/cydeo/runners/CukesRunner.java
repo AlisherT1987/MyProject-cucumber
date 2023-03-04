@@ -11,11 +11,14 @@ import org.junit.runner.RunWith;
                 "json:target/cucumber.json",
                 "html:target/cucumber/report.html",
                 "junit:target/junit/junit-report.xml",
+                "me.jvt.cucumber.report.PrettyReports:target/cucumber",
                 "rerun:target/rerun.txt",
 
         },
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
+        dryRun = false,
+        tags = "@flipkart",
        publish = true
 )
 public class CukesRunner {}

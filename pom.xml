@@ -43,6 +43,12 @@
             <artifactId>cucumber-java</artifactId>
             <version>7.3.2</version>
         </dependency>
+        <dependency>
+            <groupId>me.jvt.cucumber</groupId>
+            <artifactId>reporting-plugin</artifactId>
+            <version>7.3.0</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>
@@ -51,11 +57,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                 <configuration>
-                    <!--  <parallel>methods</parallel>
-                      <threadCount>4</threadCount>-->
+                     <parallel>methods</parallel>
+                      <threadCount>4</threadCount>
                     <testFailureIgnore>true</testFailureIgnore>
                     <includes>
-                        <include>**/*Runner.java</include>
+                        <include>**/*CukesRunner.java</include>
                     </includes>
                 </configuration>
             </plugin>
